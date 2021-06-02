@@ -1,6 +1,6 @@
 Copy Files To :
 
-C:\Program Files\Ampps\www\CSE348
+C:\Program Files\Ampps\www\
 
 Then go
 
