@@ -1,4 +1,6 @@
-# BookStore – A Simple Database Management System using MySQL + PHP
+# BookStore
+
+# A Simple Database Management System using MySQL + PHP
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)      [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) ![](https://camo.githubusercontent.com/e5031d971f0fe1cfff21f7e99dc0406eecd41b9f294d17db7523340bdf9fcccb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f56697375616c53747564696f2d3543324439312e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d76697375616c2d73747564696f266c6f676f436f6c6f723d7768697465)
 
