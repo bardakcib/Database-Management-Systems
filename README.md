@@ -159,3 +159,12 @@ END;
 
 CALL procedure_SimulateSales();
 ```
+
+
+## PHP PDO Database Connection
+```php
+$mysql_host = "localhost";
+  $mysql_user = "root";
+  $mysql_password = "mysql";
+  $db = new PDO("mysql:host=$mysql_host", $mysql_user, $mysql_password);
+```
