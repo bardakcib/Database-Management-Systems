@@ -165,10 +165,35 @@ CALL procedure_SimulateSales();
 ```
 
 
-## PHP PDO Database Connection
+## PHP PDO Database Connection Sample
 ```php
-$mysql_host = "localhost";
-  $mysql_user = "root";
-  $mysql_password = "mysql";
-  $db = new PDO("mysql:host=$mysql_host", $mysql_user, $mysql_password);
+    $mysql_host = "localhost";
+    $mysql_user = "root";
+    $mysql_password = "mysql";
+    $db = new PDO("mysql:host=$mysql_host", $mysql_user, $mysql_password);
+```
+
+
+## PHP PDO Data Fetch Sample
+```php
+    $query2 = file_get_contents(__DIR__ . "\question3_C_1.sql");
+
+    $query2 = $db->prepare($query2);
+    $query2->bindParam(':param_id', $selected);
+    $query2->execute();
+    $tempRowIndex = 1;
+    $tempIncome = 0;
+    $tempAmount = 0;
+    foreach ($query2 as $row2) {
+      echo "<tr>";
+      echo "<td>" . $tempRowIndex . "</td>";
+      echo "<td>" . $row2['customerName'] . " " . $row2['customerSurnmae'] . "</td>";
+      echo "<td>" . $row2['totalAmount'] . " pcs</td>";
+      echo "<td>" . $row2['totalIncome'] . " TL</td>";
+      echo "</tr>";
+      $tempIncome = $tempIncome + $row2['totalIncome'];
+      $tempAmount = $tempAmount + $row2['totalAmount'];
+      $tempRowIndex = $tempRowIndex + 1;
+    }
+    echo "</table> <br>";
 ```
