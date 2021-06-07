@@ -208,4 +208,6 @@ CALL procedure_SimulateSales();
 6. [PHP Table Sample](https://stackoverflow.com/questions/17902483/show-values-from-a-mysql-database-table-inside-a-html-table-on-a-webpage)
 7. [Procedure Sample](https://stackoverflow.com/questions/18409755/create-stored-procedures-with-pdo-in-php/18411103#18411103)
 8. [Cursor Sample](https://www.sqlshack.com/an-overview-of-the-sql-cursor-fetch_status-functions/)
-9. [Official Turkey City List](https://postakodu.ptt.gov.tr/)
+9. [Official Turkey City List](https://postakodu.ptt.gov.tr/)   Download Link is kind of hidden :) 
+	![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/ptt.png)
+	
