@@ -59,7 +59,7 @@ To Change it go to &quot;C:\Program Files\Ampps\mysql\my.ini&quot; file and at u
 ![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/bestWorstBorder.png)
 
 
-
+## Query For Reading From .csv Files
 ```sql
 LOAD DATA  INFILE 'C:\\Program Files\\Ampps\\www\\CSE348\\turkey.csv' 
 IGNORE INTO TABLE temp 
@@ -71,4 +71,91 @@ IGNORE 1 LINES
 set district_name = TRIM(@col1),
     city_name = TRIM(@col2),
     branch_name = TRIM(@col3);
+```
+
+
+## Cursor For Simulating Random Sales Transactions
+```sql
+DROP PROCEDURE IF EXISTS procedure_SimulateSales;
+
+
+
+SET @row_number = 0;    
+                   
+-- DELIMITER $$
+-- CREATE PROCEDURE procedure_SimulateSales()             
+CREATE DEFINER=`root`@`localhost` PROCEDURE `procedure_SimulateSales`()
+BEGIN
+   DECLARE done INT DEFAULT FALSE;
+   DECLARE branchCount INT DEFAULT (Select Count(1) from branch);
+   DECLARE customerID INT DEFAULT 0;
+   DECLARE branchID INT DEFAULT 0;
+   DECLARE stockID INT DEFAULT 0;
+   DECLARE bookAmount INT DEFAULT 0;
+   DECLARE totalStock INT DEFAULT 0;
+   DECLARE minDate DATETIME DEFAULT '2020-04-30 14:53:27';
+   DECLARE maxDate DATETIME DEFAULT '2021-04-30 14:53:27';
+   
+   DECLARE c1 CURSOR FOR
+    -- Generate random number between 40 and 500 for every branch
+                     SELECT id as customerID, 
+							CASE
+								WHEN @row_number < branchCount THEN @row_number:=@row_number + 1
+								ELSE @row_number:=@row_number + 1 - branchCount
+							END as branchID,
+							(FLOOR( 10 + RAND( ) *10 )) AS bookAmount
+						FROM bedirhan_bardakci.tampRandomCustomers;
+
+   DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE; -- not found olursa true yap
+
+    CREATE TABLE IF NOT EXISTS tampRandomCustomers (
+    id  INT(6) NULL
+    );
+
+
+   Delete from bedirhan_bardakci.tampRandomCustomers;
+   INSERT INTO bedirhan_bardakci.tampRandomCustomers (id )
+    SELECT  id
+    FROM bedirhan_bardakci.customer
+    order by RAND();
+
+
+   OPEN c1;
+   WHILE NOT done DO
+        FETCH NEXT FROM c1 INTO customerID, branchID, bookAmount;
+		    SELECT Count(1) into totalStock FROM bedirhan_bardakci.stock where branch_id = branchID and isSold = 0;
+            IF (done = FALSE ) THEN -- Prevent Last row of inner cursor fetched twice
+				WHILE bookAmount > 0 and totalStock > 0 DO
+                
+					SELECT id   
+                      into stockID 
+                      FROM bedirhan_bardakci.stock
+					 where branch_id = branchID
+					   and isSold = 0 
+					 LIMIT 1;
+                     
+
+					INSERT INTO bedirhan_bardakci.sale (customer_id, salesman_id, stock_id, amount, saledate)
+						VALUES  (
+                        customerID,
+                        (select id from bedirhan_bardakci.salesman where branch_id = branchID order by RAND() LIMIT 1),
+                        stockID,
+                        1,
+                        (SELECT TIMESTAMPADD(SECOND, FLOOR(RAND() * TIMESTAMPDIFF(SECOND, minDate, maxDate)), minDate))
+                        );
+                        
+					Update bedirhan_bardakci.stock set isSold = 1 where id = stockID;
+                    
+					SET bookAmount = bookAmount - 1;
+                    SET totalStock = totalStock - 1;
+                END WHILE;
+            END IF;
+   END WHILE;
+   CLOSE c1;
+   DROP TABLE IF EXISTS tampRandomCustomers;
+END;
+-- END$$
+-- DELIMITER ;
+
+CALL procedure_SimulateSales();
 ```
