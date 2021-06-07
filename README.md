@@ -35,7 +35,9 @@ To change it; go to "C:\Program Files\Ampps\mysql\my.ini" file and find "# SERVE
 Modified my.ini file : 
 	![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/secure.png)
 
-## After Everything is  as expected, then a main page like below should welcome you :
+
+
+## After configurations, a main page like below should welcome you :
 
 
 ![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/mainPageO.png)
