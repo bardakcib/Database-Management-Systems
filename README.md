@@ -29,9 +29,9 @@ To use this command you may need to run this sql command to check default folder
     - SHOW VARIABLES LIKE "secure_file_priv";
 
 To change it; go to "C:\Program Files\Ampps\mysql\my.ini" file and find "# SERVER SECTION"  then add the below line under this section :
-	```sql
-	secure_file_priv="C:/Program Files/Ampps/www/CSE348"
-	```
+
+	- secure_file_priv="C:/Program Files/Ampps/www/CSE348"
+
 	![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/secure.png)
 
 ## After Everything is  as expected, then a main page like below should welcome you :
