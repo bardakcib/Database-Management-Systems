@@ -58,3 +58,17 @@ To Change it go to &quot;C:\Program Files\Ampps\mysql\my.ini&quot; file and at u
 
 ![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/bestWorstBorder.png)
 
+
+
+---sql
+LOAD DATA  INFILE 'C:\\Program Files\\Ampps\\www\\CSE348\\turkey.csv' 
+IGNORE INTO TABLE temp 
+FIELDS TERMINATED BY ';' 
+ENCLOSED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(@col1, @col2, @col3)
+set district_name = TRIM(@col1),
+    city_name = TRIM(@col2),
+    branch_name = TRIM(@col3);
+---
