@@ -2,12 +2,12 @@
 <html>
 
 <head>
-  <title>CSE 348 Database Management Systems Project - Bedirhan Bardakci</title>
+  <title>Database Management Systems - BookStore Project - Bedirhan Bardakci</title>
 </head>
 
 <body>
 
-  <h1>CSE 348 Database Management Systems Project - Bedirhan Bardakci</h1>
+  <h1>Database Management Systems - BookStore Project - Bedirhan Bardakci</h1>
 
   <?php
   $mysql_host = "localhost";
