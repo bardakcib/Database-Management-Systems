@@ -26,7 +26,7 @@ To complete this project I have used :
 
 To use this command you may need to run this sql command to check default folder path
 
-    - SHOW VARIABLES LIKE &quot;secure\_file\_priv&quot;;
+    - SHOW VARIABLES LIKE "secure_file_priv";
 
 To Change it go to &quot;C:\Program Files\Ampps\mysql\my.ini&quot; file and at under &quot;Server&quot; part add the below line :
 
