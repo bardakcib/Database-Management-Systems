@@ -36,5 +36,5 @@ To Change it go to &quot;C:\Program Files\Ampps\mysql\my.ini&quot; file and at u
 After Everything is  as expected, then a main page like below should welcome you :
 
 
-![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/mainPage.png)
+![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/mainPageO.png)
 
