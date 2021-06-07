@@ -14,7 +14,7 @@ To run this project;
 2. After installation copy all files to &quot;C:\Program Files\Ampps\www\&quot; ( this is default for me )
 3. Then go to &quot;[http://localhost/CSE348/install.php](http://localhost/CSE348/install.php)&quot; using your web browser
 
-\*\*\*Before Start, Please go to MYSQL --\&gt; Edit -\&gt; Preferences --\&gt; SQL Editor and set to connection read timeout to at least 60. Because we will be running some scripts to simulate sales transactions on database side\*\*\*
+\*\*\*Before Start, Please go to MYSQL --> Edit --> Preferences --> SQL Editor and set to connection read timeout to at least 60. Because we will be running some scripts to simulate sales transactions on database side\*\*\*
 
 To Complete This Project I have used :
 
