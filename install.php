@@ -2,12 +2,12 @@
 <html>
 
 <head>
-  <title>CSE 348 Database Management Systems Project - Bedirhan Bardakci</title>
+  <title>Database Management Systems - BookStore Project - Bedirhan Bardakci</title>
 </head>
 
 <body>
 
-  <h1>CSE 348 Database Management Systems Project - Bedirhan Bardakci</h1>
+  <h1>Database Management Systems - BookStore Project - Bedirhan Bardakci</h1>
   <a href="http://localhost/CSE348/ShowDistrictSalesInformation.php" target="_blank"> Go To Report Page</a>
   <br> <br>
   <a href="http://localhost/CSE348/ShowInvoiceInformation.php" target="_blank"> Go To Invoice Page</a>
