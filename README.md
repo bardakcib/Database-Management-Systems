@@ -33,8 +33,28 @@ To Change it go to &quot;C:\Program Files\Ampps\mysql\my.ini&quot; file and at u
     - secure\_file\_priv=&quot;C:/Program Files/Ampps/www/CSE348&quot;
 
 
-After Everything is  as expected, then a main page like below should welcome you :
+## After Everything is  as expected, then a main page like below should welcome you :
 
 
 ![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/mainPageO.png)
+
+
+## Invoice Report :
+
+![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/invoiceBorder.png)
+
+
+## Sales Income Report :
+
+![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/saleIncomeBorder.png)
+
+
+## Sales Report :
+
+![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/salesBorder.png)
+
+
+## Best Worst Salesman :
+
+![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/bestWorstBorder.png)
 
