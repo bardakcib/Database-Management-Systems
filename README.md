@@ -14,9 +14,10 @@ To run this project;
 2. After installation copy all files to &quot;C:\Program Files\Ampps\www\&quot; ( this is default for me )
 3. Then go to &quot;[http://localhost/CSE348/install.php](http://localhost/CSE348/install.php)&quot; using your web browser
 
-    !!!Before Start, Please go to MYSQL --> Edit --> Preferences --> SQL Editor and set to connection read timeout to at least 60. Because we will be running some scripts to   simulate sales transactions on database side!!!
+    **Before running the prohect**, Please go to MYSQL --> Edit --> Preferences --> SQL Editor and set to connection read timeout to at least 60. Because we will be running some scripts to simulate sales transactions on database side
 
-To Complete This Project I have used :
+
+To complete this project I have used :
 
 - [VSCode](https://code.visualstudio.com/download) for PHP and SQL codes
 - [MySQL WorkBench](https://dev.mysql.com/downloads/installer/)  ( with ammps, mysql will be installed but I don&#39;t like the browser gui. So I have installed the workbench, workbench is much more capable )
@@ -31,4 +32,7 @@ To Change it go to &quot;C:\Program Files\Ampps\mysql\my.ini&quot; file and at u
 
     - secure\_file\_priv=&quot;C:/Program Files/Ampps/www/CSE348&quot;
 
-Main Page :
+
+After Everything is  as expected, then a main page like below should welcome you :
+
+![](https://github.com/bardakcib/Database-Management-Systems/blob/main/resources/mainPage.png)
