@@ -53,7 +53,6 @@ group by sman.id,sman.forename,sman.surname ,br.id
 and r.branchID = salesAmaountSub.branchID
 
 ) finalMax on finalMax.branchID = br.id
-group by salesAmaountSub.branchID , salesAmaountSub.totalSale , r.salesmanName, r.salesmanSurname
 
 LEFT JOIN
 
