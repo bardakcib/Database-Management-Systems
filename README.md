@@ -1,6 +1,6 @@
 # BookStore
 
-# A Simple Database Management System using MySQL + PHP
+# A Simple Database Management System using MySQL & PHP
 
 ![](https://github.com/bardakcib/resources/blob/main/badges/built-with-love.svg)       ![](https://github.com/bardakcib/resources/blob/main/badges/vscode.svg)       ![](https://github.com/bardakcib/resources/blob/main/badges/php.svg)       ![](https://github.com/bardakcib/resources/blob/main/badges/mysql.svg)       ![](https://github.com/bardakcib/resources/blob/main/badges/stackover.svg)
 
