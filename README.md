@@ -18,10 +18,10 @@ To run this project;
 
 To Complete This Project I have used :
 
-- VSCode for PHP and SQL codes
-- MySQL WorkBench ( with ammps, mysql will be installed but I don&#39;t like the browser gui. So I have installed the workbench, workbench is much more capable )
-- For database connections I have used PDO
-- To read and upload .csv files to database I have used &quot;LOAD DATA INFILE&quot; command.
+- [VSCode](https://code.visualstudio.com/download) for PHP and SQL codes
+- [MySQL WorkBench](https://dev.mysql.com/downloads/installer/)  ( with ammps, mysql will be installed but I don&#39;t like the browser gui. So I have installed the workbench, workbench is much more capable )
+- For database connections I have used [PDO - PHP Data Objects](https://www.php.net/manual/en/book.pdo.php)
+- To read and upload .csv files to database I have used **&quot;LOAD DATA INFILE&quot;** command.
 
 To use this command you may need to run this sql command to check default folder path
 
