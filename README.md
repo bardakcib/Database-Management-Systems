@@ -60,7 +60,7 @@ To Change it go to &quot;C:\Program Files\Ampps\mysql\my.ini&quot; file and at u
 
 
 
----sql
+```sql
 LOAD DATA  INFILE 'C:\\Program Files\\Ampps\\www\\CSE348\\turkey.csv' 
 IGNORE INTO TABLE temp 
 FIELDS TERMINATED BY ';' 
@@ -71,4 +71,4 @@ IGNORE 1 LINES
 set district_name = TRIM(@col1),
     city_name = TRIM(@col2),
     branch_name = TRIM(@col3);
----
+```
