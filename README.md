@@ -197,3 +197,15 @@ CALL procedure_SimulateSales();
     }
     echo "</table> <br>";
 ```
+
+# References
+
+1. [Youtube - Run PHP with AMPPS in your local windows machine](https://www.youtube.com/watch?v=l1I0CCOUWug)
+2. [Book List sample xlsx](https://www.z-kutuphane.org/z-kutuphane-kitap-listesi/)
+3. [Name List](https://gist.github.com/ismailbaskin/1325813)
+4. [SurName List](https://gist.github.com/emrekgn/493304c6445de15657b2#file-soyisimler)
+5. [PDO Samples](https://kerteriz.net/php-pdo-ile-mysql-veritabani-baglantisi-islemleri/)
+6. [PHP Table Sample](https://stackoverflow.com/questions/17902483/show-values-from-a-mysql-database-table-inside-a-html-table-on-a-webpage)
+7. [Procedure Sample](https://stackoverflow.com/questions/18409755/create-stored-procedures-with-pdo-in-php/18411103#18411103)
+8. [Cursor Sample](https://www.sqlshack.com/an-overview-of-the-sql-cursor-fetch_status-functions/)
+9. [Official Turkey City List](https://postakodu.ptt.gov.tr/)
