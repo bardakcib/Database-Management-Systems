@@ -6,7 +6,9 @@
 </head>
 
 <body>
-
+  <?php
+  $mysql_host = "localhost";
+  ?>
   <h1>Database Management Systems - BookStore Project - Bedirhan Bardakci</h1>
   <br><br><br>
 
