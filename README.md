@@ -1,4 +1,4 @@
-# BookStore
+# DBMS
 
 # A Simple Database Management System using MySQL & PHP
 
